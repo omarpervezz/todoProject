@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackNote</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="top-nav-menu">
+                    <div class="navInner">
+                        <button id="topNav"> <img src="/assets/img&icon/menu_open.svg" alt="top-nav"></button>
+                    </div>
+                </div>
+                <div class="logo-area">
+                    <div class="logoInner">
+                        <h2>BlackNote</h2>
+                    </div>
+                </div>
+                <div class="restore&backup">
+                    <div class="threeDotSInner">
+                        <button id="threeDots">
+                            <img src="/assets/img&icon/more_vert.svg" alt="threeDots">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--top nav bar-->
+    <div id="topNavPopUp">
+        <div class="topUpContainer">
+            <div class="topUpContent">
+                <div>
+                    <p>Title</p>
+                </div>
+                <div>
+                    <p>Date created</p>
+                </div>
+                <div>
+                    <p>Date modified</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--top nav bar-->
+     <!--backup and restore-->
+    <div id="backupandRestore">
+        <div class="topUpContainer">
+            <div class="topUpContent">
+                <div>
+                    <a href="#">
+                        <img src="/assets/img&icon/cloud.svg" alt="cloud">
+                    <p>Backup / Restore</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/assets/img&icon/adjust.svg" alt="cloud">
+                    <p>Add Block</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--backup and restore-->
+    <!--search input-->
+    <div id="searchBox">
+        <div class="searchInner">
+            <img src="/assets/img&icon/keyboard_arrow_left.svg" alt="arrowleft" id="leftArrow">
+            <input type="text" placeholder="Search" id="search">
+        </div>
+    </div>
+    <!--search input-->
+    <!--category-->
+    <div id="category">
+        <div class="conatiner">
+            <div class="row">
+                <div>
+                    <div class="bottom-arrow">
+                        <button id="bottom-arrow">
+                            <img src="/assets/img&icon/keyboard_arrow_down.svg" alt="arrowdownward">
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="category-text">
+                        <h3>Category</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="pen-tool">
+                        <img src="/assets/img&icon/pen.svg" alt="pen-tool">
+                    </div>
+                </div>
+            </div>
+            <div class="row allnotesrow">
+                <div>
+                   <div class="allnotes">
+                    <h4>All notes</h4>
+                   </div>
+                </div>
+                <div>
+                    <div class="uncategorizednotes">
+                        <h4>Uncategorized notes(0)</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="addN">
+                <img src="/assets/img&icon/coloradd.svg" alt="add">
+            </div>
+        </div>
+    </div>
+    <!--category-->
+
+
+    <!--add note -->
+    <div id="addNoteAndCheck">
+        <div class="topUpContainer">
+            <div class="topUpContent">
+                <div>
+                    <button id="noteAdder">Note</button>
+                </div>
+                <div>
+                    <button id="checkListAdder">Checklist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- add note-->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="bottom-nav-menu">
+                    <div class="bottomNavInner">
+                        <button id="bottomNav"> <img src="/assets/img&icon/menu.svg" alt="bottom-nav"></button>
+                    </div>
+                </div>
+                <div class="searchIcon">
+                    <div class="searchIconInner">
+                        <button id="searchInnerButton">
+                            <img src="/assets/img&icon/search.svg" alt="searchIcon">
+                        </button>
+                    </div>
+                </div>
+                <div class="addNote">
+                    <div class="addNoteInner">
+                        <img src="/assets/img&icon/arrow_downward.svg" alt="arrow-downward" class="down-arrow">
+                        <button id="addNote">
+                            <img src="/assets/img&icon/add.svg" alt="addNote">
+                        </button>
+                    </div>
+                </div>
+                <div class="star">
+                    <div class="startInner">
+                        <button id="star">
+                            <img src="/assets/img&icon/star_outline.svg" alt="star">
+                        </button>
+                    </div>
+                </div>
+                <div class="dailyCheck">
+                    <div class="dailyCheckInner">
+                        <button id="dailyCheck">
+                            <img src="/assets/img&icon/check_circle.svg" alt="star">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/app.js"></script>
+</body>
+
+</html>

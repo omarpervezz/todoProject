@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>note</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body onload="noteStart()">
+     <!--search input-->
+     <div class="noteAddSearchBox" id="noteAddSearchBox">
+        <div class="searchInner">
+            <img src="/assets/img&icon/keyboard_arrow_left.svg" alt="arrowleft" id="leftArrow2">
+            <input type="text" placeholder="Title" id="Title">
+             <div class="smallFontSite">
+                <span id="fontBigForNote" class="increseFont">A</span>
+                <span id="fontSmallForNote" class="descreseFont"><small id="smallFont" class="smallfont">A</small>A</span>
+             </div>
+        </div>
+        <div class="maincontent" id="maincontent">
+            <textarea name="content" id="usercontent" placeholder="Content"></textarea>
+        </div>
+        <div class="notesave" id="notesave">
+            <p>Save</p>
+        </div>
+    </div>
+    <!--search input-->
+    <!-- <script src="/assets/app.js"></script> -->
+    <script>
+        function noteStart(){
+    const noteAddSearchBox = document.querySelector('#noteAddSearchBox');
+    noteAddSearchBox.classList.add('noteAddSearchBoxBlock');
+    const leftArrow2 = document.querySelector('#leftArrow2');
+    leftArrow2.addEventListener('click', () => {
+        alert('click me now')
+    });
+
+    // // get data from two input
+    // function getData(){
+       
+    // };
+    // getData();
+    
+};
+
+
+function getData(){
+    const inputTitle = document.querySelector('#Title');
+    const value = inputTitle.value;
+    console.log(value)
+}
+inputTitle.addEventListener('input', getData)
+    </script>
+</body>
+
+</html>
